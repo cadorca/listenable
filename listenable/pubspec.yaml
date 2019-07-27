@@ -1,0 +1,13 @@
+name: listenable
+description: Make you models changes listenable by flutter widgets using ValueListenableBuilder.
+version: 0.3.0
+author: Camilo Alvarez <cadorca@gmail.com>
+homepage: https://github.com/cadorca/listenable
+
+environment:
+  sdk: ">=2.0.0 <3.0.0"
+
+dependencies:
+
+dev_dependencies:
+  test: 1.3.4

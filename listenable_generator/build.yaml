@@ -1,0 +1,15 @@
+targets:
+  $default:
+    builders:
+      listenable_generator|listenable_annotations:
+        enabled: true
+
+builders:
+  listenable:
+    target: ":listenable_generator"
+    import: "package:listenable_generator/listenable_generator.dart"
+    builder_factories: ["listenableBuilder"]
+    build_extensions: {".dart": [".g.part"]}
+    auto_apply: dependents
+    build_to: cache
+    applies_builders: ["source_gen|combining_builder"]
