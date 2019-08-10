@@ -60,6 +60,7 @@ class ListenableClass {
       
       void dispose(){
         ${fields.map((f) => f.disposeMethodCall).join("\n")}
+        if(_changeNotifier != null) _changeNotifier.dispose();
       }
       
       void notifyListeners(){

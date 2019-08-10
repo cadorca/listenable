@@ -67,7 +67,7 @@ class ListenableField {
          } 
   """;
 
-  String get disposeMethodCall => "${name}.dispose();";
+  String get disposeMethodCall => "if(${name} != null) ${name}.dispose();";
 
   String get generatedCode => """
     $type $name;
